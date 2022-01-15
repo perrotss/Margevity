@@ -1,0 +1,211 @@
+  /*=======  Footer Area START =======*/
+  .footer-area {
+      background-color: #fff;
+      padding: 90px 0 120px;
+      overflow: hidden;
+
+      .footer-box {
+          position: relative;
+
+          &::before {
+              position: absolute;
+              top: 50%;
+              right: 0px;
+              content: '';
+              width: 2px;
+              height: 200%;
+              background: #f8f8f8;
+              transform: translateY(-50%);
+              display: none;
+          }
+      }
+
+      .footer-box.one {
+          &::before { 
+              right: -8%;
+          }
+      }
+      .footer-box.two {
+        &::before { 
+            right: -16%;
+        }
+    }
+    .footer-box.three {
+        &::before { 
+            right: 6%;
+        }
+    }
+
+      .footer-box.none {
+          &::before {
+              display: none;
+          }
+      }
+
+      .footer-box { 
+          margin-top: 30px;
+
+          .logo {
+              padding-bottom: 34px;
+          }
+
+          h4.lasthead {
+              padding-bottom: 20px;
+          }
+
+          p.text {
+              font-size: 14px;
+              line-height: 1.71;
+          }
+
+          ul {
+              padding-left: 20px;
+              list-style-type: circle;
+
+              li {
+                  padding-top: 8px;
+
+                  a {
+                      font-size: 14px;
+                      line-height: 1.71;
+                      color: #6f7987;
+
+                      &:hover {
+                          color: #547af8;
+                      }
+                  }
+
+                  &:hover {
+                      color: #547af8;
+                  }
+
+                  &.active {
+                      color: #547af8;
+
+                      a {
+                          color: #547af8;
+                      }
+                  }
+              }
+          }
+
+          .social {
+              margin-top: 32px;
+
+              a {
+                  margin-right: 8px;
+                  border-radius: 3px;
+                  background-color: rgb(247, 247, 247);
+                  width: 40px;
+                  height: 40px;
+                  text-align: center;
+                  line-height: 2.66;
+                  color: rgb(161, 164, 175);
+                  display: inline-block;
+                  -webkit-transition: 0.3s;
+                  transition: 0.3s;
+
+                  &:hover {
+                      background: #547af8;
+                      color: #fff;
+                  }
+              }
+          }
+      }
+  }
+
+  .copyright {
+      padding: 30px 0px 30px;
+      background: #f7f7f7;
+
+      p.text {
+          color: #6f7987;
+
+          a {
+              color: #547af8;
+
+              &:hover {
+                  text-decoration: underline;
+              }
+          }
+      }
+  }
+
+  /*=======  Footer Area END =======*/
+
+  /*======= Index-2 Footer Area Start =======*/
+  .footer-area.two {
+      background-color: #03142c;
+
+      .footer-box { 
+        &::before { 
+            background: #102037; 
+        }
+    }
+
+      .footer-box {
+          h4.lasthead {
+              color: #ffffff;
+          }
+
+          p.text {
+              color: #bec2ce;
+          }
+
+          ul {
+              li {
+                  a {
+                      font-size: 14px;
+                      line-height: 1.71;
+                      color: #bec2ce;
+
+                      &:hover {
+                          color: #ffffff;
+                      }
+                  }
+
+                  &:hover {
+                      color: #ffffff;
+                  }
+
+                  &.active {
+                      color: #ffffff;
+
+                      a {
+                          color: #ffffff;
+                      }
+                  }
+              }
+          }
+
+          .social {
+              a {
+                  background-color: rgb(16, 31, 52);
+                  color: rgb(177, 193, 214);
+
+                  &:hover {
+                      background: #547af8;
+                      color: #fff;
+                  }
+              }
+          }
+      }
+  }
+
+  .copyright {
+      background: rgb(1, 16, 37);
+
+      p.text {
+          color: #8a8f9c;
+
+          a {
+              color: #fff;
+
+              &:hover {
+                  text-decoration: underline;
+              }
+          }
+      }
+  }
+
+  /*======= Index-2 Footer Area END =======*/

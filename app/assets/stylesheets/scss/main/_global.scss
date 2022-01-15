@@ -1,0 +1,498 @@
+
+
+/*=======  Global   =======*/
+body {
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    font-size: 15px;
+    line-height: 1.66;
+    font-family: $roboto;
+    color: $text-color;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    transition: all 0.3s ease-out;
+}
+
+a:focus,
+.slick-initialized .slick-slide:focus,
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
+
+::-webkit-scrollbar {
+    background-color: #ccc;
+    width: 8px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $secondary-color;
+}
+
+.slick-slide img {
+    display: inline-block;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+i,
+span,
+a {
+    display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    margin: 0px;
+    color: $secondary-color;
+    font-family: $josefin;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    margin: 0px;
+    color: $text-color;
+}
+
+a {
+    transition: all 0.3s ease-out;
+    color: $primary-color;
+    text-decoration: none;
+}
+
+/*======= Input Styles =======*/
+input,
+textarea,
+select {
+    width: 100%;
+    height: 64px;
+    background-color: $white;
+    color: $text-color-2;
+    padding: 0 30px;
+    font-size: 16px;
+    border: none;
+}
+
+.form-control:focus {  
+    box-shadow: none;
+}
+
+textarea {
+    height: 170px;
+    display: inherit;
+    padding-top: 20px;
+}
+
+::placeholder {
+    color: inherit;
+    opacity: 1;
+}
+
+input[type="search"]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="search"]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    height: auto;
+    width: auto;
+}
+
+.form-group {
+    position: relative;
+
+    input,
+    textarea,
+    select {
+        padding-right: 40px;
+    }
+
+    .icon {
+        position: absolute;
+        right: 30px;
+        z-index: 2;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $text-color-2;
+        line-height: 1;
+    }
+
+    &.textarea-group {
+        .icon {
+            transform: translateY(0);
+            top: 20px;
+        }
+    }
+} 
+/*======= Common Class =======*/
+.main-btn {
+    height: 55px;
+    padding: 0px 22px;
+    background-color: $primary-color;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff !important;
+    line-height: 55px;
+    position: relative;
+    z-index: 1;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        border-radius: 5px;
+        background-color: $secondary-color;
+        transition: 0.3s;
+        opacity: 0;
+        visibility: hidden;
+        border-radius: 5px; 
+    }
+
+    &:hover {
+        color: $white;
+
+        &::before {
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    i {
+        margin-right: 5px;
+        position: relative;
+        top: 2px;
+    } 
+}
+  
+h1.head { 
+    font-size: 62px;
+    line-height: 1.16; 
+    font-weight: 700; 
+    color: $secondary-color;
+}
+
+h2.breadd { 
+    font-size: 62px;
+    line-height: 1.16; 
+    font-weight: 700; 
+    color: $secondary-color;
+}
+
+h2.title { 
+    font-size: 35px;
+    line-height: 1.28; 
+    font-weight: 700; 
+    color: $secondary-color;
+}
+
+h3.subtitle  { 
+    font-size: 24px;
+    line-height: 1.41;
+    font-weight: 700; 
+    color: $secondary-color; 
+}
+
+h3.blogtitle  { 
+    font-size: 26px;
+    line-height: 1.38;
+    font-weight: 600; 
+    color: $secondary-color; 
+}
+
+h4.lasthead  { 
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 600; 
+    color: $secondary-color; 
+}
+
+h5  { 
+    font-size: 18px;
+    line-height: 1.55;
+    font-weight: 600; 
+    color: $secondary-color; 
+}
+ 
+p.text { 
+    font-size: 15px;
+    line-height: 1.66;
+    font-weight: 400;   
+    color: $text-color;
+}  
+a{ 
+    text-decoration: none;
+  }
+ 
+a {  
+    font-size: 15px;
+    line-height: 1.66; 
+    font-family: 'Roboto', sans-serif;
+}  
+
+.section-head{
+    margin-top: -4px;
+    h2.title{
+        padding-bottom: 11px;
+    } 
+}
+
+
+/*======= Preloader =======*/
+div#preloader {
+    margin: auto;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    z-index: 9999999;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .loader-cubes {
+        top: 50%;
+        left: 50%;
+        margin-left: -25px;
+        margin-top: -25px;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        transform: rotateZ(45deg);
+
+        .loader-cube {
+            float: left;
+            width: 50%;
+            height: 50%;
+            position: relative;
+            transform: scale(1.1);
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                animation: sk-foldCubeAngle 2.4s infinite linear both;
+                transform-origin: 100% 100%;
+                background: $primary-color;
+            }
+
+            &.loader-cube2 {
+                transform: scale(1.1) rotateZ(90deg);
+
+                &::before {
+                    animation-delay: 0.3s;
+                }
+            }
+
+            .loader-cube4 {
+                transform: scale(1.1) rotateZ(270deg);
+
+                &::before {
+                    animation-delay: 0.9s;
+                }
+            }
+
+            .loader-cube3 {
+                transform: scale(1.1) rotateZ(180deg);
+
+                &::before {
+                    animation-delay: 0.6s;
+                }
+            }
+        }
+    }
+}
+
+/*=== Back to top css =======*/
+.back-to-top {
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	display: none;
+	z-index: 999999;
+}
+
+.back-to-top a {
+	color: #fff;
+	background: #0c59db;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+
+/*=======  Animations  =======*/
+@keyframes sticky {
+    0% {
+        top: -200px;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes sk-foldCubeAngle {
+    0%,
+    10% {
+        transform: perspective(140px) rotateX(-180deg);
+        opacity: 0;
+    }
+
+    25%,
+    75% {
+        transform: perspective(140px) rotateX(0);
+        opacity: 1;
+    }
+
+    100%,
+    90% {
+        transform: perspective(140px) rotateY(180deg);
+        opacity: 0;
+    }
+}
+
+@keyframes pulseBtnBefore {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes pulseBtnAfter {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-15deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateTwo {
+    0% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+ 
+@keyframes borosoto {
+    0% {
+        transform: scale(1);
+    }
+  
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse-border {
+    0% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.3);
+      opacity: 0;
+    }
+  }

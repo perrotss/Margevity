@@ -1,0 +1,345 @@
+/*=======  Checkout-box Start  =======*/
+.checkoutt-box {
+    background: #f7f7f7;
+    padding: 120px 0px 120px;
+}
+
+.input-area {
+    background: #fff;
+    padding: 50px 50px 50px;
+
+    h3.subtitle {
+        font-weight: 600;
+        color: #051c35;
+        padding-bottom: 18px;
+    }
+
+    .form-group {
+        margin-top: 10px;
+
+        label {
+            font-size: 15px;
+            line-height: 1.66;
+            font-weight: 400;
+            color: #051c35;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            border: 2px solid rgb(247, 247, 247);
+            background-color: #ffff;
+            height: 59px;
+            padding: 15px 15px 15px;
+            font-size: 15px;
+            line-height: 1.66;
+            font-weight: 400;
+            color: #051c35;
+
+            &::placeholder {
+                font-size: 15px;
+                line-height: 1.66;
+                font-weight: 400;
+                color: #858d99;
+            }
+        }
+
+        textarea {
+            min-height: 150px;
+        }
+    }
+
+    .bottom-box {
+        h3.subtitle {
+            font-weight: 600;
+            color: #051c35;
+            padding: 30px 0px 0px;
+        }
+
+        .sub-total {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid rgb(247, 247, 247);
+            background-color: #ffff;
+            padding: 15px 15px 15px;
+
+            p.text {
+                font-size: 15px;
+                line-height: 1.66;
+                font-weight: 400;
+                color: #6f7987;
+            }
+        }
+
+        .sub-total.two {
+            p.text {
+                font-weight: 500;
+                color: #051c35;
+            }
+        }
+
+        button.main-btn {
+            margin-top: 20px;
+        }
+    }
+}
+
+/*======= Checkout-box End  =======*/
+
+
+
+/*=======  Cart Start  =======*/
+.cart-box {
+    background: #f7f7f7;
+    padding: 120px 0px 120px;
+
+    .table-box {
+        background: #fff;
+
+        .table {
+            thead {
+                width: 100%;
+
+                th {
+                    vertical-align: middle;
+                    font-size: 15px;
+                    line-height: 1.66;
+                    font-weight: 700;
+                    color: #051c35;
+                    border: 0px;
+                    border-bottom: 1px solid #ddd;
+                    padding: 20px 10px 20px;
+                }
+            }
+
+            tbody {
+                width: 100%;
+
+                tr {
+                    th {
+                        vertical-align: middle;
+                        border: 0px;
+                        border-bottom: 1px solid #ddd;
+                        padding: 15px 10px 15px;
+
+                        a{
+                            img {
+                                max-width: 100px;
+                            }
+                        }  
+                        a.text {
+                            font-size: 15px;
+                            line-height: 1.66;
+                            font-weight: 500;
+                            color: #051c35;
+                        }
+
+                        p.text {
+                            font-size: 15px;
+                            line-height: 1.66;
+                            font-weight: 500;
+                            color: #051c35;
+                        }
+
+                        button.cart-dismiss {
+                            background: transparent;
+                            border: 0px;
+                            color: red;
+                            margin-left: 20px;
+                        }
+                    }
+
+                    td {
+                        vertical-align: middle;
+                        border: 0px;
+                        border-bottom: 1px solid #ddd;
+                        padding: 15px 10px 15px;
+
+                        p.text {
+                            font-size: 15px;
+                            line-height: 1.66;
+                            font-weight: 500;
+                            color: #051c35;
+                        }
+                        a.text {
+                            font-size: 15px;
+                            line-height: 1.66;
+                            font-weight: 500;
+                            color: #051c35;
+                        }
+                    }
+
+                    td {
+                        .qtySelector {
+                            width: 120px;
+                            height: 50px;
+                            margin: 0;
+                            border-radius: 50px;
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+
+                            input {
+                                height: 50px;
+                                background: transparent;
+                                border: 0px;
+                                width: 100%;
+                                padding: 10px 42px 10px 42px;
+                                font-size: 15px;
+                                line-height: 1.66;
+                                font-weight: 500;
+                                color: #051c35;
+                                text-align: center;
+
+                                &::placeholder {
+                                    font-size: 15px;
+                                    line-height: 1.66;
+                                    font-weight: 500;
+                                    color: #051c35;
+                                    text-align: center;
+                                }
+                            }
+
+
+                            .icon {
+                                cursor: pointer;
+                                width: 40px;
+                                height: 40px;
+                                border-radius: 50%;
+                                position: absolute;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                top: 50%;
+                                left: 0px;
+                                transform: translateY(-50%);
+                                color: #547af8;
+                                border: 1px solid #547af8;
+                                transition: 0.3s;
+
+                                &:hover {
+                                    background: #547af8;
+                                    color: #fff;
+                                }
+                            }
+
+                            .icon.two {
+                                right: 0px;
+                                left: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-box {
+        margin-top: 60px;
+        background: #fff;
+        padding: 40px 40px 40px;
+
+        h3.subtitle {
+            font-weight: 600;
+            color: #051c35;
+        }
+
+        .sub-total {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid rgb(247, 247, 247);
+            background-color: #ffff;
+            padding: 15px 15px 15px;
+
+            p.text {
+                font-size: 15px;
+                line-height: 1.66;
+                font-weight: 400;
+                color: #6f7987;
+            }
+        }
+
+        .sub-total.two {
+            p.text {
+                font-weight: 500;
+                color: #051c35;
+            }
+        }
+
+        a.main-btn {
+            margin-top: 20px;
+        }
+    }
+
+    .form-box {
+        display: flex;
+        align-items: center;
+
+        input.cupon {
+            font-size: 14px;
+            line-height: 1.71;
+            font-weight: 400;
+            background-color: rgb(255, 255, 255);
+            height: 60px;
+            padding: 15px 15px 15px;
+            border: 0px;
+            max-width: 234px;
+            margin-right: 20px;
+            color: #a1a1a1;
+
+
+            &::placeholder {
+                font-size: 15px;
+                line-height: 1.66;
+                font-weight: 400;
+                color: #a1a1a1;
+            }
+        }
+    }
+
+    .form-box,
+    .form-box-two {
+        margin-top: 20px;
+
+        button {
+            border: 2px solid rgb(229, 229, 229);
+            height: 64px;
+            padding: 10px 22px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: transparent;
+            color: #6f7987;
+            font-size: 15px;
+            line-height: 1.66;
+            font-weight: 500;
+            transition: 0.3s;
+
+            &:hover {
+                color: #ffffff;
+                background: #547af8;
+                border: 2px solid rgba(229, 229, 229, 0);
+
+                ::before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .form-box-two {
+        display: flex;
+        justify-content: flex-end;
+
+        .main.one {
+            margin-right: 20px;
+        }
+
+    }
+}
+
+/*=======  Cart End  =======*/

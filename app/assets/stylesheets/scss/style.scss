@@ -1,0 +1,59 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Markpro - Digital Marketplace HTML Template 
+    Version: 1.0
+    Author: DivDojo
+    Author URI: https://themeforest.net/user/divdojo
+    Description: Digital Marketplace HTML Template
+ 
+
+    Note: This is Main Style Scss File.
+-----------------------------------------------------------------------------------
+	CSS INDEX
+	===================
+    01. Normalize 
+    02. Global
+    03. Header
+    04. Banner 
+    05. Partners
+    06. Category
+    07. Featured 
+    08. Unique Themes
+    09. Price & Plan
+    10. Testomonial
+    11. Blog
+    12. Why Choose
+    13. Option
+    14. Newest
+    15. Footer
+    16. Breadcrumb
+    17. Blog Area
+    18. Blog Details
+    19. Pagination
+    20. Widget Area
+    21. Team
+    22. About
+    23. Service
+    24. Map Area
+    25. Contact-From
+    26. FAQ
+    27. Product-Details 
+-----------------------------------------------------------------------------------*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+// Sass Global
+@import "main/_variables.scss";
+@import "main/_normalize.scss";
+@import "main/_global.scss";
+// pages
+@import "pages/_header.scss";
+@import "pages/_banner.scss";
+@import "pages/_section.scss";
+@import "pages/_footer.scss";
+@import "pages/_breadcrumb.scss";
+@import "pages/_blog.scss";
+@import "pages/_other-page.scss";
+@import "pages/_cart-others.scss";
+
