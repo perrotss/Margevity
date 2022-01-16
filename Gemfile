@@ -22,6 +22,9 @@ gem 'turbolinks', '~> 5'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'simple_form'
+
+gem 'jquery-rails'
+gem "font-awesome-rails"
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'autoprefixer-rails', '10.2.5'
