@@ -15,7 +15,8 @@
 		// Adds toggle button to li items that have children
 		menuItems.find('li a').each(function () {
 			if ($(this).next().length > 0) {
-				$(this).parent('li').append('<span class="dd-trigger"><i class="fal fa-plus"></i></span>');
+				$(this).parent('li');
+				// .append('<span class="dd-trigger"><i class="fal fa-plus"></i></span>')
 			}
 		});
 
