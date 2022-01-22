@@ -8,8 +8,8 @@
         <%= f.text_field :first_name, placeholder: "First Name", class: 'label' %>
         <%= f.text_field :last_name, placeholder: "Last Name", class: 'label' %>
         <%= f.email_field :email, placeholder: "Email", class: 'label' %>
-        <%= f.text_field :your_business, placeholder: "Tell us about your business", class: 'label large-box' %>
-        <%= f.text_field :looking_for, placeholder: "What services are you looking for?", class: 'label large-box' %>
+        <%= f.text_area :your_business, placeholder: "Tell us about your business", class: 'label large-box' %>
+        <%= f.text_area :looking_for, placeholder: "What services are you looking for?", class: 'label large-box' %>
         <%= f.submit "Submit", type: "button", class: "simple", id: "simple" %>
     <% end %>
 <% end  %>

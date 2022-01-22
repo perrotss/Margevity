@@ -58,23 +58,24 @@
 }
 
 #simple{
-    max-width: 10%;
-    position: relative;
+    padding: 1em 2.1em 1.1em;
+    border-radius: 3px;
+    margin: 8px 8px 8px 8px;
+    color: #fbdedb;
+    background-color: #fbdedb;
     display: inline-block;
-    padding: 18px 24px;
-    margin: 0;
-    border: 0;
-    cursor: pointer;
-    overflow: visible;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 1;
-    font-weight: 600;
+    background: black;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: .85em;
     text-transform: uppercase;
-    letter-spacing: .2em;
-    background-color: #262526;
-    color: white;
-    transition: all 0.2s; 
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
 }
 
 .sub-header {
@@ -87,8 +88,6 @@
     right: 50%;
 }
 
-@media only screen and (min-width: 699px) {
-.simple {
-    padding: 18px 44px;
-}
+.large-box {
+    color: gray;
 }
