@@ -4,7 +4,7 @@
 .font-alt {
     display: flex;
     justify-content: space-around;
-    margin-top: 36px;
+    margin-top: 50px;
 }
 
 .btn-ghost{
@@ -61,7 +61,7 @@
     padding: 1em 2.1em 1.1em;
     border-radius: 3px;
     margin: 8px 8px 8px 8px;
-    color: #fbdedb;
+    color: white;
     background-color: #fbdedb;
     display: inline-block;
     background: black;
@@ -86,8 +86,19 @@
     text-align: center;
     left: 50%;
     right: 50%;
+    margin-top: 20px;
 }
 
 .large-box {
     color: gray;
+}
+
+.label {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
