@@ -89,8 +89,8 @@
                         </p>
                         <form action="#">
                             <div class="form-group">
-                                <input type="text" placeholder="Search Here" class="form-control">
-                                <button class="main-btn icon"><i class="fas fa-search"></i></button>
+                                <%= link_to "Contact Us", customers_path, class: "btn btn-lg btn-primary", style: "color: white" %>
+                                <%# <button class="main-btn icon"><i class="fas fa-search"></i></button> %>
                             </div>
                         </form>
                     </div>
@@ -229,432 +229,48 @@
                             from our collection.</p>
                     </div>
                 </div>
-
             </div>
 
-            <div class="row">
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="themes-box">
-                        <div class="thumb">
-                            <img src="<%= asset_path("unique-theme/unique-2.png") %>" alt="">
-                            <div class="button-box">
-                                <a href="product-details.html" class="link link-1"><i class="far fa-eye"></i></a>
-                                <a href="#0" class="link link-2"><i class="fas fa-cart-plus"></i></a>
-                                <a href="#0" class="link link-3"><i class="fas fa-heart"></i></a>
-                            </div>
-                        </div>
-                        <div class="main-content">
-                            <h5><a href="product-details.html">Linnor - Digital Agency Wordpress Theme</a></h5>
-                            <div class="last-part">
-                                <div class="right">
-                                    <p class="text">
-                                        by <a href="author-product.html" class="link">DivDojo</a> in <a href="product-two.html" class="link">Agency</a>
-                                    </p>
-                                    <div class="review">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="left-content">
-                                    <h3 class="subtitle">$59</h3>
-                                    <span>1247 Sale</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.4">
-                    <div class="themes-box">
-                        <div class="thumb">
-                            <img src="<%= asset_path("unique-theme/unique-1.png") %>" alt="">
-                            <div class="button-box">
-                                <a href="product-details.html" class="link link-1"><i class="far fa-eye"></i></a>
-                                <a href="#0" class="link link-2"><i class="fas fa-cart-plus"></i></a>
-                                <a href="#0" class="link link-3"><i class="fas fa-heart"></i></a>
-                            </div>
-                        </div>
-                        <div class="main-content">
-                            <h5><a href="product-details.html">Ciknor - Cryptocurrency Wordpress Theme</a></h5>
-                            <div class="last-part">
-                                <div class="right">
-                                    <p class="text">
-                                        by <a href="author-product.html" class="link">DivDojo</a> in <a href="product-two.html"
-                                            class="link">Business</a>
-                                    </p>
-                                    <div class="review">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="left-content">
-                                    <h3 class="subtitle">$89</h3>
-                                    <span>2247 Sale</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="themes-box">
-                        <div class="thumb">
-                            <img src="<%= asset_path("unique-theme/unique-3.png") %>" alt="">
-                            <div class="button-box">
-                                <a href="product-details.html" class="link link-1"><i class="far fa-eye"></i></a>
-                                <a href="#0" class="link link-2"><i class="fas fa-cart-plus"></i></a>
-                                <a href="#0" class="link link-3"><i class="fas fa-heart"></i></a>
-                            </div>
-                        </div>
-                        <div class="main-content">
-                            <h5><a href="product-details.html">Metro - E-LEARNING Wordpress Theme</a></h5>
-                            <div class="last-part">
-                                <div class="right">
-                                    <p class="text">
-                                        by <a href="author-product.html" class="link">DivDojo</a> in <a href="product-two.html"
-                                            class="link">Education</a>
-                                    </p>
-                                    <div class="review">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="left-content">
-                                    <h3 class="subtitle">$29</h3>
-                                    <span>1376 Sale</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="themes-box">
-                        <div class="thumb">
-                            <img src="<%= asset_path("unique-theme/unique-4.png") %>" alt="">
-                            <div class="button-box">
-                                <a href="product-details.html" class="link link-1"><i class="far fa-eye"></i></a>
-                                <a href="#0" class="link link-2"><i class="fas fa-cart-plus"></i></a>
-                                <a href="#0" class="link link-3"><i class="fas fa-heart"></i></a>
-                            </div>
-                        </div>
-                        <div class="main-content">
-                            <h5><a href="product-details.html">Avvo - Creative Agency & Showcase Theme</a></h5>
-                            <div class="last-part">
-                                <div class="right">
-                                    <p class="text">
-                                        by <a href="author-product.html" class="link">DivDojo</a> in <a href="product-two.html"
-                                            class="link">Portfolio</a>
-                                    </p>
-                                    <div class="review">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="left-content">
-                                    <h3 class="subtitle">$23</h3>
-                                    <span>1742 Sale</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="themes-box">
-                        <div class="thumb">
-                            <img src="<%= asset_path("unique-theme/unique-5.png") %>" alt="">
-                            <div class="button-box">
-                                <a href="product-details.html" class="link link-1"><i class="far fa-eye"></i></a>
-                                <a href="#0" class="link link-2"><i class="fas fa-cart-plus"></i></a>
-                                <a href="#0" class="link link-3"><i class="fas fa-heart"></i></a>
-                            </div>
-                        </div>
-                        <div class="main-content">
-                            <h5><a href="product-details.html">Eduvut - Multipurpose Education Template</a></h5>
-                            <div class="last-part">
-                                <div class="right">
-                                    <p class="text">
-                                        by <a href="author-product.html" class="link">DivDojo</a> in <a href="product-two.html" class="link">Agency</a>
-                                    </p>
-                                    <div class="review">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="left-content">
-                                    <h3 class="subtitle">$18</h3>
-                                    <span>1121 Sale</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="themes-box">
-                        <div class="thumb">
-                            <img src="<%= asset_path("unique-theme/unique-6.png") %>" alt="">
-                            <div class="button-box">
-                                <a href="product-details.html" class="link link-1"><i class="far fa-eye"></i></a>
-                                <a href="#0" class="link link-2"><i class="fas fa-cart-plus"></i></a>
-                                <a href="#0" class="link link-3"><i class="fas fa-heart"></i></a>
-                            </div>
-                        </div>
-                        <div class="main-content">
-                            <h5><a href="product-details.html">Aqqua - Spa and Beauty HTML5 Template</a></h5>
-                            <div class="last-part">
-                                <div class="right">
-                                    <p class="text">
-                                        by <a href="author-product.html" class="link">DivDojo</a> in <a href="product-two.html" class="link">Beauty</a>
-                                    </p>
-                                    <div class="review">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                        <i class="far fa-star"></i>
-                                    </div>
-                                </div>
-                                <div class="left-content">
-                                    <h3 class="subtitle">$15</h3>
-                                    <span>1735 Sale</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--====== Unique Themes End  ======-->
-
-
-    <!--====== Price & Plan Start  ======-->
-    <section class="price plan">
+    <div class="partner">
         <div class="container">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="section-head">
-                        <h2 class="title">Price & Plan</h2>
-                        <p class="text">Anything embarrassing hidden in the middle of text. All the generators on the
-                            Internet tend to repeat predefined necessary.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="link">
-                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home"
-                                    role="tab" aria-controls="pills-home" aria-selected="true">
-                                    Monthly
-                                </a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                                    role="tab" aria-controls="pills-profile" aria-selected="            se">Yearly</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
             <div class="row">
                 <div class="col-12 wow fadeInUp">
-                    <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                            aria-labelledby="pills-home-tab">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="price-box">
-                                        <a href="#0" class="link">Basic Plan</a>
-                                        <div class="icon">
-                                            <img src="<%= asset_path("pricing-1.png") %>" alt="">
-                                        </div>
-                                        <h2 class="dolar"> <sub>$</sub>25</h2>
-                                        <ul class="list">
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Theme update & Support</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Demo Content install</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>All Theme For LIfe</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fa fa-arrow-right"></i>
-                                                <span>Acess All Theme</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#0" class="main-btn purchase">Purchase Now</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="price-box">
-                                        <a href="#0" class="link active">Advance</a>
-                                        <div class="icon active">
-                                            <img src="<%= asset_path("pricing-2.png") %>" alt="">
-                                        </div>
-                                        <h2 class="dolar"><sub>$</sub>39</h2>
-                                        <ul class="list">
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Demo Content install</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Theme update & Support</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Acess All Theme</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>All Theme For LIfe</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#0" class="main-btn purchase">Purchase Now</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="price-box">
-                                        <a href="#0" class="link">Premium</a>
-                                        <div class="icon">
-                                            <img src="<%= asset_path("pricing-3.png") %>" alt="">
-                                        </div>
-                                        <h2 class="dolar"><sub>$</sub>44</h2>
-                                        <ul class="list">
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>All Theme For Life</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Demo Content install</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Acess All Theme</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Theme update & Support</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#0" class="main-btn purchase">Purchase Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                            aria-labelledby="pills-profile-tab">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="price-box">
-                                        <a href="#0" class="link">Basic Plan</a>
-                                        <div class="icon">
-                                            <img src="<%= asset_path("pricing-3.png") %>" alt="">
-                                        </div>
-                                        <h2 class="dolar"><sub>$</sub>45</h2>
-                                        <ul class="list">
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>All Theme For LIfe</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Theme update & Support</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Demo Content install</span>
-                                            </li>
-
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Acess All Theme</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#0" class="main-btn purchase">Purchase Now</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="price-box">
-                                        <a href="#0" class="link active">Advance</a>
-                                        <div class="icon active">
-                                            <img src="<%= asset_path("pricing-3.png") %>" alt="">
-                                        </div>
-                                        <h2 class="dolar"><sub>$</sub>69</h2>
-                                        <ul class="list">
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Theme update & Support</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Demo Content install</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Acess All Theme</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>All Theme For LIfe</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#0" class="main-btn purchase">Purchase Now</a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class="price-box">
-                                        <a href="#0" class="link">Premium</a>
-                                        <div class="icon">
-                                            <img src="<%= asset_path("pricing-1.png") %>" alt="">
-                                        </div>
-                                        <h2 class="dolar"><sub>$</sub>85</h2>
-                                        <ul class="list">
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Demo Content install</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>All Theme For Life</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Acess All Theme</span>
-                                            </li>
-                                            <li class="list-item">
-                                                <i class="fas fa-arrow-right"></i>
-                                                <span>Theme update & Support</span>
-                                            </li>
-                                        </ul>
-                                        <a href="#0" class="main-btn purchase">Purchase Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="totalpartner owl-carousel owl-theme">
+                        <a href="#0" class="single item">
+                            <img src="<%= asset_path("partner/partner-1.png") %>" alt="partner">
+                        </a>
+                        <a href="#0" class="single item">
+                            <img src="<%= asset_path("partner/partner-2.png") %>" alt="partner">
+                        </a>
+                        <a href="#0" class="single item">
+                            <img src="<%= asset_path("partner/partner-3.png") %>" alt="partner">
+                        </a>
+                        <a href="#0" class="single item">
+                            <img src="<%= asset_path("partner/partner-4.png") %>" alt="partner">
+                        </a>
+                        <a href="#0" class="single item">
+                            <img src="<%= asset_path("partner/partner-5.png") %>" alt="partner">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <%# <section class="cta">
+            <div class="cta-content">
+                <div class="container px-5">
+                    <h2 class="text-black display-1 lh-1 mb-4 head">
+                        Ready to grow your brand?
+                        <br />
+                        Coming Soon.
+                    </h2>
+                    <h3 style="color: black">
+                        Find out when we launch.
+                    </h3>
+                    <%# <a class="btn btn-outline-light py-3 px-4 rounded-pill" href="https://startbootstrap.com/theme/new-age" target="_blank">Sign Up</a> %>
+                <%# </div>
+            </div>
+        </section> %>
     <!--====== Price & Plan End  ======-->
 
 
