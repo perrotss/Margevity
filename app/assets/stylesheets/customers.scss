@@ -55,16 +55,25 @@
 #go-back {
     width: 109px; 
     margin: auto;
-    color: black;
+    color: black;   
+}
+
+#go-back:hover{
+    background: black;
+    color: white;
+}
+
+#simple:hover{
+    background: #0269d9;
+    color: white;
 }
 
 #simple{
-    padding: 0.5rem 1rem;
+    // padding: 0.5rem 1rem;
     font-size: 1.25rem;
     line-height: 1.5;
     border-radius: 0.3rem;
-    // padding: 1em 2.1em 1.1em;
-    border-radius: 0.3rem;
+    padding: 1em 2.1em 1.1em;
     margin: 8px 8px 8px 8px;
     color: white;
     background-color: #fbdedb;
@@ -76,7 +85,7 @@
     transition: 0.3s;
     font-family: sans-serif;
     font-weight: 800;
-    font-size: .85em;
+    font-size: 16px;
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -98,15 +107,15 @@
     color: gray;
 }
 
-// .label {
-//     padding: 12px;
-//     border: 1px solid #ccc;
-//     border-radius: 4px;
-//     box-sizing: border-box;
-//     margin-top: 6px;
-//     margin-bottom: 16px;
-//     resize: vertical;
-// }
+.label {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
 
 .big-image{
     height: 100vh;
