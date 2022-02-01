@@ -1,5 +1,5 @@
 class CustomersController < ApplicationController
-  def index
+def index
     @customer = Customer.new
 end
 
@@ -16,6 +16,6 @@ end
 private
 
 def customer_params
-    params.require(:customer).permit(:firstname, :lastname, :email)
+    params.require(:customer).permit(:first_name, :last_name, :email, :your_business, :looking_for)
 end
 end
